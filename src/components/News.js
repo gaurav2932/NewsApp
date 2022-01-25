@@ -10,7 +10,7 @@ const News =(props)=> {
         const [page, setPage] = useState(1)
         const [totalResults, setTotalResults] = useState(0)
 
-        document.title = `${props.category} - TajaNews`;
+        document.title = `${props.category} - Latest News`;
 
         const updateNews = async()=> {
                 props.setProgress(10)
