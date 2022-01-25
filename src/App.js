@@ -10,6 +10,7 @@ import {
   Route
 } from "react-router-dom";
 import { useState } from 'react/cjs/react.development';
+import Footer from './components/Footer';
 
 
 const App =()=> {
@@ -38,6 +39,7 @@ const App =()=> {
           <Route exact path="/sports"><News setProgress={setProgress} apiKey={apiKey} key="sports" pageSize={pageSize} country="in" category="sports" /></Route>
           <Route exact path="/technology"><News setProgress={setProgress} apiKey={apiKey} key="technology" pageSize={pageSize} country="in" category="technology" /></Route>
         </Switch>
+        <Footer />
         </Router>
       </div>
     )
